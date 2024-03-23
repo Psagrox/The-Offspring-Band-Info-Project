@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/curso-asincronismo/proyecto/async-landing/src/assets/main.js"></script>
+    <link rel="icon" type="image/jpg" href="https://seeklogo.com/images/T/the-offspring-logo-39492A3F08-seeklogo.com.png"/>
+
+</head>
+
+<body>
+    <div class="relative bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+                    fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                </svg>
+                <div>
+                    <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+                        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+                            aria-label="Global">
+                            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                                <div class="flex items-center justify-between w-full md:w-auto">
+                                    <a href="#">
+                                        <span class="sr-only">Title</span>
+                                        <img class="h-[60px] w-[60px] "
+                                            src="https://seeklogo.com/images/T/the-offspring-logo-39492A3F08-seeklogo.com.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-[20px] hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                                <a href="#" class="font-extrabold text-gray-500 hover:text-gray-900">About</a>
+                                <a href="#" class="font-extrabold text-gray-500 hover:text-gray-900">Albums</a>
+                                <a href="#" class="font-extrabold text-gray-500 hover:text-gray-900">Videos</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                            <span class="block xl:inline">The Offspring</span>
+                            <br>
+                            <span class="block text-3xl sm:text-4xl md:text-5xl text-yellow-400">1984 - present</span>
+                        </h1>
+                        <p
+                            class="mt-3 text-2xl text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            The Offspring is an American punk rock band from Garden Grove, California, formed in 1984. 
+                            <br>Originally formed under the name Manic Subsidal, the band's current lineup 
+                            consists of lead vocalist and rhythm guitarist Bryan "Dexter" Holland, lead guitarist Kevin "Noodles" Wasserman, bassist Todd Morse, multi-instrumentalist Jonah Nimoy 
+                            and drummer Brandon Pertzborn.</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+        
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <figure class="text-black bg-black h-56 w-full sm:h-72 md:h-96 lg:w-full lg:h-full mr-auto flex justify-center "> 
+                <img class="h-64 w-96 ml-40 object-contain sm:h-72 md:h-96 lg:w-full lg:h-full ml-auto mr-auto flex justify-center"
+                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHprcXE2b3p1NWUyYXo4c29nNTlxYmJwcWo3ZGx4Z3RvYWFpbHd1NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Zf6Ooi78B2kbwq3rQF/giphy.gif" alt="Img">src="/curso-asincronismo/proyecto/async-landing/src/assets/img/1661392620738.jpg" alt="Img"
+            </figure>
+
+        </div>
+    </div>
+
+    <div class="mx-auto py-16 sm:py-10 ">
+        <figure class="w-full bg-black flex flex-col items-center">
+            <p class="text-white pb-8 text-base sm:text-2xl font-extrabold py-3">Picture of the offspring 2022</p>
+            <img class="object-cover px-5 pb-10 h-full max-h-[40rem]
+            lg:h-full" src="https://images8.alphacoders.com/114/1144246.jpg"
+                alt="The Offspring" title="The Offspring">
+        </figure>
+    </div>
+
+    <!--Spotify iframe-->
+
+    <iframe class="mx-auto lg:max-w-7xl lg:px-8" style="border-radius:12px" src="https://open.spotify.com/embed/album/6YGXlFehYvg5MuzMPfgkdp?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <!--Spotify API-->
+
+    <div class="max-w-2xl mx-auto py-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+            <h2 class="relative text-2xl font-extrabold tracking-tight text-gray-900" id="albums_title">Albums
+            </h2>
+            <p class="mb-[3rem] text-xl mt-3 h-200 text-gray-500 sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-2xl lg:mx-0">
+                After achieving a local following with their early releases, including their 1989 self-titled debut album and the vinyl-only EP Baghdad (1991), 
+                the Offspring signed with independent label Epitaph Records and released two albums: Ignition (1992) and Smash (1994). Smash, which contained the 
+                band's first major hit "Come Out and Play".</p>
+            <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+                id="content_albums">
+                <!-- albuns cards -->
+                <!-- <div class="bg-gray-300 rounded-lg p-4">
+                    <img class="mb-4 rounded-lg"
+                        src="https://i.scdn.co/image/ab67616d0000b273e32b600cf149063d811341e3" alt="Portada">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">porfiado</h3>
+                        <p class="text-base font-medium">
+                            Año: xx <br>
+                            Canciones: x
+                        </p>
+                    </div>
+                </div> -->
+                <!-- end -->
+            </div>
+        </div>
+    </div>    
+    <!--Youtube API-->
+
+    <div class="bg-white">
+        <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+            <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">Last YouTube Videos</h2>
+            
+                <!-- content -->
+            
+                <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+                    id="content_videos"> </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="bg-black  w-full">
+        <div
+            class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                <span class="block text-white">Contact</span>
+                <span class="block text-yellow-400 hover:text-red-700 "><a
+                        href="https://www.offspring.com/">Official web page</a></span>
+                <span class="block text-base font-medium text-gray-500">By @Psagrox</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+
+                <a class="mr-2" href="https://www.youtube.com/channel/UCP3EX5VKeaG4Oa2qTKPuEFA">
+                    <svg style="color: red" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                        fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                            fill="red"></path>
+                    </svg>
+                </a>
+
+                <a class="scale-90 mr-1" href="https://open.spotify.com/intl-es/artist/5LfGQac0EIXyAN8aUwmNAQ">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" width="48px" version="1.1"
+                        viewBox="0 0 168 168">
+                        <path fill="#1ED760"
+                            d="m83.996 0.277c-46.249 0-83.743 37.493-83.743 83.742 0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l0.001-0.004zm38.404 120.78c-1.5 2.46-4.72 3.24-7.18 1.73-19.662-12.01-44.414-14.73-73.564-8.07-2.809 0.64-5.609-1.12-6.249-3.93-0.643-2.81 1.11-5.61 3.926-6.25 31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-0.903-8.148-4.35-1.04-3.453 0.907-7.093 4.354-8.143 30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976v-0.001zm0.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219-1.254-4.14 1.08-8.513 5.221-9.771 29.581-8.98 78.756-7.245 109.83 11.202 3.73 2.209 4.95 7.016 2.74 10.733-2.2 3.722-7.02 4.949-10.73 2.739z" />
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/offspring/?hl=es">
+                    <img class="h-12 w-12 scale-90"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png">
+                </a>
+
+                <a href="https://www.facebook.com/Offspring/?locale=es_LA">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                        viewBox="0 0 48 48" style=" fill:#000000;">
+                        <linearGradient id="awSgIinfw5_FS5MLHI~A9a_yGcWL8copNNQ_gr1" x1="6.228" x2="42.077"
+                            y1="4.896" y2="43.432" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#0d61a9"></stop>
+                            <stop offset="1" stop-color="#16528c"></stop>
+                        </linearGradient>
+                        <path fill="url(#awSgIinfw5_FS5MLHI~A9a_yGcWL8copNNQ_gr1)"
+                            d="M42,40c0,1.105-0.895,2-2,2H8c-1.105,0-2-0.895-2-2V8c0-1.105,0.895-2,2-2h32	c1.105,0,2,0.895,2,2V40z">
+                        </path>
+                        <path
+                            d="M25,38V27h-4v-6h4v-2.138c0-5.042,2.666-7.818,7.505-7.818c1.995,0,3.077,0.14,3.598,0.208	l0.858,0.111L37,12.224L37,17h-3.635C32.237,17,32,18.378,32,19.535V21h4.723l-0.928,6H32v11H25z"
+                            opacity=".05"></path>
+                        <path
+                            d="M25.5,37.5v-11h-4v-5h4v-2.638c0-4.788,2.422-7.318,7.005-7.318c1.971,0,3.03,0.138,3.54,0.204	l0.436,0.057l0.02,0.442V16.5h-3.135c-1.623,0-1.865,1.901-1.865,3.035V21.5h4.64l-0.773,5H31.5v11H25.5z"
+                            opacity=".07"></path>
+                        <path fill="#fff"
+                            d="M33.365,16H36v-3.754c-0.492-0.064-1.531-0.203-3.495-0.203c-4.101,0-6.505,2.08-6.505,6.819V22h-4v4	h4v11h5V26h3.938l0.618-4H31v-2.465C31,17.661,31.612,16,33.365,16z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a href="https://twitter.com/offspring?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584l-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
